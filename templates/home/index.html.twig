@@ -16,7 +16,7 @@
         {% for e in response %}
             <p> {{ e.title }} </p>
           <li> 
-            <img src="{{'http://image.tmdb.org/t/p/w500' ~ e.poster_path}}" />
+            <img src="{{urlBase ~ e.poster_path}}" />
           </li>
          {# {{dump(e)}}  #}
         {% endfor %}
